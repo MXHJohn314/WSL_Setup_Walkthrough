@@ -96,12 +96,13 @@ through the Microsoft Store.
       terminal than the One we set up username and password on. Basically, use this instead of using
       the Ubuntu app directly. close the original tab, which is running Powershell.
 
-## Configure Ubuntu to run GUI apps from windows
+## Configure Ubuntu GUI apps to run in Windows
 
-* Type these commands in Terminal:
+* Type these commands in Windows Terminal:
     + `sudo apt update -y && sudo apt upgrade -y`
     + `export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0`
     + `export LIBGL_ALWAYS_INDIRECT=1`
     + `sudo apt install -y x11-apps → enter password`
     + `xeyes`
-    + You are now running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
+
+####You are now running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
