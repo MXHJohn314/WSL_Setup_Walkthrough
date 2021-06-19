@@ -26,15 +26,19 @@ through the Microsoft Store.
 * Select `Properties` then use the keyboard shortcut `Ctrl` + `Alt` + `T` to set the shortcut.
 * #### Now you can use the shortcut to open Terminal, just like Linux!
 
-## Install Ubuntu App
-
 * Go back to Microsoft Store, search for “Ubuntu” click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as
   Administrator
-* Type the command in
-  Powershell `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+* Type these commands in
+  Powershell 
+    + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+    + `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+* Restart the computer
 * Download the WSl 2 upgrade
   at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi → run the installation
+* Open Powershell in Administrator Mode again
+* Type command `wsl --set-default-version 2`
+* Close Powershell
 
 ## Install VcXsrv
 
@@ -53,13 +57,14 @@ through the Microsoft Store.
     + Select Start no client → click next
     + Check all three boxes → click next
     + Save configuration as config.xlaunch to desktop
-    + Windows Firewall will appear. Select both check boxes, then click "allow access"
+    + Click Finish
+    + Windows Firewall will appear. Select both check boxes, then click "Allow access"
 
 
 
-* Use keyboard shortcut `Windows + R` to open the Run window  → search for "shell:startup"
-* Click and drag the `config.xlaunch` file into the startup folder
-* Go back to Powershell and run these commands to keep your 
+* Use keyboard shortcut `Windows + R` to open the Run window → search for "shell:startup"
+* Click and drag the `config.xlaunch` file into the startup folder, then close the window
+* Go back to Powershell and run these commands to keep Ubuntu's time in sync with your Windows machine.
     + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
     + `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
     + Restart the computer
@@ -95,7 +100,7 @@ through the Microsoft Store.
 
 * Type these commands in Terminal:
     + `sudo apt update -y && sudo apt upgrade -y`
-    + `export DISPLAY== $(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0`
+    + `export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0`
     + `export LIBGL_ALWAYS_INDIRECT=1`
     + `sudo apt install -y x11-apps → enter password`
     + `xeyes`
