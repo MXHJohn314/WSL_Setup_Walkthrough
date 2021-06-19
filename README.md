@@ -1,6 +1,8 @@
 # Setting Up Windows Subsytem for Linux 2
 
 ### Requirements: Windows computer, 8+ GB ram
+### Setup time: 10 minutes
+
 This supplemental text is just an outline of the complete video walkthrough. Click here for the comprehensive video.
 
 ### Benefits of using Windows Subsystem for Linux 2:
