@@ -15,16 +15,15 @@ through the Microsoft Store.
 
 ## Setting up Windows Terminal
 
-* Hit the Windows key and search for “Microsoft Store” → run it
+* Press the Windows key and search for “Microsoft Store” → run it
 * In Microsoft Store, search for “Windows Terminal” → install it
-* Use keyboard shortcut `Windows + R` to open the Run window
+* Use the keyboard shortcut `Windows + R` to open the Run window
 * search for `shell:AppsFolder`
 * In the new Explorer window that appears, find and Right-click on Windows Terminal
 * create shortcut → yes to the popup menu
 
 * Go to your Desktop and Right-click the new Windows Terminal shortcut
-* select `Properties`
-  press `Ctrl` + `Alt` + `T` to set the shortcut.
+* Select `Properties` then use the keyboard shortcut `Ctrl` + `Alt` + `T` to set the shortcut.
 * #### Now you can use the shortcut to open Terminal, just like Linux!
 
 ## Install Ubuntu App
@@ -58,7 +57,7 @@ through the Microsoft Store.
 
 
 
-* Use keyboard shortcut `Windows + R` to open the Run cmd → search for "shell:startup"
+* Use keyboard shortcut `Windows + R` to open the Run window  → search for "shell:startup"
 * Click and drag the `config.xlaunch` file into the startup folder
 * Go back to Powershell and run these commands to keep your 
     + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
