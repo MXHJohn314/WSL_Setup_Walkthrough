@@ -81,8 +81,7 @@ through the Microsoft Store.
 ## Set up Ubuntu as the default profile for Windows Terminal
 
 * Run Windows Terminal
-    + At the top of Windows Terminal, notice you can have multiple tabs like a browser.
-    + Click on the new tab button (looks like `∨`) arrow to get to a drop-down menu, and select Settings.
+    + At the top of Windows Terminal, notice you can have multiple tabs like a browser. Click on the new tab button (`∨`) to get to a drop-down menu, and select Settings.
     + In the settings tab, choose Ubuntu as the new default profile, hit the save button toward the
       bottom, then close the settings tab
     + Click the `+` button to make a new tab.
