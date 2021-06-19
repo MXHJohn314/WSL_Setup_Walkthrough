@@ -105,4 +105,4 @@ through the Microsoft Store.
     + `sudo apt install -y x11-apps → enter password`
     + `xeyes`
 
-####You are now running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
+#### You are now running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
