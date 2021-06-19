@@ -18,7 +18,7 @@ through the Microsoft Store.
 ## Setting up Windows Terminal
 
 * Press the Windows key and search for “Microsoft Store” → run it
-* In Microsoft Store, search for “Windows Terminal” → install it
+* In Microsoft Store, search for “Windows Terminal” → click on the first option (furthest to the left). Press Install on the next screen.
 * Use the keyboard shortcut `Windows + R` to open the Run window
 * search for `shell:AppsFolder`
 * In the new Explorer window that appears, find and Right-click on Windows Terminal
@@ -26,58 +26,48 @@ through the Microsoft Store.
 
 * Go to your Desktop and Right-click the new Windows Terminal shortcut
 * Select `Properties` then use the keyboard shortcut `Ctrl` + `Alt` + `T` to set the shortcut.
+* click Apply, then Ok
 * #### Now you can use the shortcut to open Terminal, just like Linux!
 
 * Go back to Microsoft Store, search for “Ubuntu” click the `install` button
-* While Ubuntu is installing, press the Windows key and search for Powershell, then Run as
-  Administrator
-* Type these commands in
-  Powershell 
+* While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
+* Click yes to the pop up.
     + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+    + press enter
     + `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+    + press enter
 * Restart the computer
 * Download the WSl 2 upgrade
-  at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi → run the installation
+  at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+* Run the installation
 * Open Powershell in Administrator Mode again
 * Type command `wsl --set-default-version 2`
-* Close Powershell
+* Keep Powershell open, we will come
 
 ## Install VcXsrv
 
 #### VcXsrv will allow you to use your computer's display for WSL 2 applications
 
-* Download VcXsrv at https://sourceforge.net/projects/vcxsrv/
-* run the installer
+* Download VcXsrv at https://sourceforge.net/projects/vcxsrv/ and run the executable. It may take a minute to ask for permission to run.
     + click next
     + click install
     + wait for install
     + close it
 
 
-* You will see a new desktop shortcut for VcXsrv. Run it.
+* You will see a new desktop shortcut for "XLaunch". Run it.
     + Select Multiple windows → click next
     + Select Start no client → click next
     + Check all three boxes → click next
     + Save configuration as config.xlaunch to desktop
     + Click Finish
-    + Windows Firewall will appear. Select both check boxes, then click "Allow access"
+    + Check both boxes, then click "Allow access"
 
-
-
-* Use keyboard shortcut `Windows + R` to open the Run window → search for "shell:startup"
-* Click and drag the `config.xlaunch` file into the startup folder, then close the window
-* Go back to Powershell and run these commands to keep Ubuntu's time in sync with your Windows machine.
-    + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-    + `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
-    + Restart the computer
-    + Open Powershell again
-    + `wsl --set-default-version 2`
-    + Keep Powershell open
 
 ## Set up username and password on Ubuntu App
 
 * Press the Windows key and search for “Ubuntu” from the Start menu → run it.
-    + Wait for Ubuntu to set up to prompt you for a username and password that you will not forget
+    + Wait for Ubuntu to prompt you for a username and password that you will not forget
         - Note: in Linux, the password characters do no appear. Sometimes it’s easier to write
           something in Notepad, copy it, then right-click once to paste it. This is easier to do
           with passwords, especially when you can’t see them.
@@ -90,21 +80,28 @@ through the Microsoft Store.
 
 ## Set up Ubuntu as the default profile for Windows Terminal
 
-* Use Ctrl + Alt + T to run Windows Terminal
-    + From the drop down menu next to the new tab button, select Settings
+* Run Windows Terminal
+    + At the top of Windows Terminal, notice you can have multiple tabs like a browser.
+    + Click on the `∨` arrow to get to a drop-down menu, and select Settings.
     + In the settings tab, choose Ubuntu as the new default profile, hit the save button toward the
       bottom, then close the settings tab
-    + Click the new tab button. Notice that you are now in Ubuntu. This is a more feature rich
+    + Click the `+` button to make a new tab.
+    + Notice that you are now in Ubuntu. This is a more feature rich
       terminal than the One we set up username and password on. Basically, use this instead of using
       the Ubuntu app directly. close the original tab, which is running Powershell.
 
 ## Configure Ubuntu GUI apps to run in Windows
 
 * Type these commands in Windows Terminal:
-    + `sudo apt update -y && sudo apt upgrade -y`
-    + `export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0`
-    + `export LIBGL_ALWAYS_INDIRECT=1`
-    + `sudo apt install -y x11-apps → enter password`
-    + `xeyes`
+  
+  > sudo apt update -y && sudo apt upgrade -y
+  
+  > export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0
+  
+  > export LIBGL_ALWAYS_INDIRECT=1
+  
+  > sudo apt install -y x11-apps 
+  
+  > xeyes
 
-#### You are now running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
+#### You should now see a new window in the taskbar with a pair of eyes. Click on in. You are running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
