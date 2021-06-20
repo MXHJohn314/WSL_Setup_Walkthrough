@@ -34,10 +34,9 @@ through the Microsoft Store.
 * Click yes to the pop up.
 
   > `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-    + press enter
   
   > `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
-    + press enter
+
 * Restart the computer
 * Download the WSl 2 upgrade
   at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
