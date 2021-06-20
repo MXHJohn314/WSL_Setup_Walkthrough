@@ -32,16 +32,19 @@ through the Microsoft Store.
 * Go back to Microsoft Store, search for “Ubuntu” click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
 * Click yes to the pop up.
-    + `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+
+  > `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
     + press enter
-    + `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+  
+  > `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
     + press enter
 * Restart the computer
 * Download the WSl 2 upgrade
   at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 * Run the installation
 * Open Powershell in Administrator Mode again
-* Type command `wsl --set-default-version 2`
+* Type command
+  > `wsl --set-default-version 2`
 * Keep Powershell open, we will come
 
 ## Install VcXsrv
@@ -74,8 +77,9 @@ through the Microsoft Store.
     + Close Ubuntu
     
 * Go back to Powershell and use these commands to keep Ubuntu's clock in sync with your Windows machine
-    + `schtasks /create /tn WSLClockSync /tr "wsl.exe sudo hwclock -s" /sc onevent /ec system /mo "*[System[Provider[@Name='Microsoft-Windows-Kernel-General'] and (EventID=1)]]"`
-    + `Set-ScheduledTask WSLClockSync -Settings (New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries)`
+  > `schtasks /create /tn WSLClockSync /tr "wsl.exe sudo hwclock -s" /sc onevent /ec system /mo "*[System[Provider[@Name='Microsoft-Windows-Kernel-General'] and (EventID=1)]]"`
+
+  > `Set-ScheduledTask WSLClockSync -Settings (New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries)`
 
 
 ## Set up Ubuntu as the default profile for Windows Terminal
