@@ -30,7 +30,7 @@ through the Microsoft Store.
 
 #### Now you can use the shortcut to open Terminal, just like Linux!
 
-* Go back to Microsoft Store, search for “Ubuntu” click the `install` button
+* Go back to Microsoft Store, search for “Ubuntu”, and click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
 * Click yes to the pop up.
 
