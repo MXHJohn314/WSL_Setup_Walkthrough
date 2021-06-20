@@ -65,6 +65,11 @@ through the Microsoft Store.
     + Click Finish
     + Check both boxes, then click "Allow access"
 
+* Use `Windows + R` again to open the Run window
+    + type `shell:startup` and press `Enter`
+    + click and drag the newly-created `config.xlaunch` shortcut from the desktop into the startup folder.
+
+### Now your couputer will automatically configure VcxSrv to allow WSL 2 to use you computer's display!
 
 ## Set up username and password on Ubuntu App
 
@@ -89,12 +94,12 @@ through the Microsoft Store.
 ## Configure Ubuntu GUI apps to run in Windows
 
 * One line at a time, copy paste this text block into the file:
-    > apt update -y && sudo apt upgrade -y<br>
-    > apt install ntpdate -y<br>
+    > sudo apt update -y && sudo apt upgrade -y<br>
+    > sudo apt install ntpdate -y<br>
     > echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc<br>
     > echo -e "export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc<br>
     > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc<br>
-    > apt install -y x11-apps<br>
+    > sudo apt install -y x11-apps<br>
 
 * Start a new terminal and try opening a Linux gui application<br>
     > xeyes
