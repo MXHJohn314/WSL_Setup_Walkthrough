@@ -27,7 +27,8 @@ through the Microsoft Store.
 * Go to your Desktop and Right-click the new Windows Terminal shortcut
 * Select `Properties` then use the keyboard shortcut `Ctrl` + `Alt` + `T` to set the shortcut.
 * click Apply, then Ok
-* #### Now you can use the shortcut to open Terminal, just like Linux!
+
+#### Now you can use the shortcut to open Terminal, just like Linux!
 
 * Go back to Microsoft Store, search for “Ubuntu” click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
