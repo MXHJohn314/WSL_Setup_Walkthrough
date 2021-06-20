@@ -101,6 +101,7 @@ through the Microsoft Store.
 
 * Type `:wq` to save the file and exit vim
 * Run the script
+    > bash temp_script.sh
 * Remove the script
     > rm temp_script.sh
 
