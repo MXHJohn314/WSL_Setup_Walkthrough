@@ -88,14 +88,23 @@ through the Microsoft Store.
 
 ## Configure Ubuntu GUI apps to run in Windows
 
-* Type these commands in Windows Terminal, entering your password when prompted:
+* Run this command to start editing a new temporary file in vim:
+    > vim temp_script.sh
+
+* copy paste this text block into the file:
     > sudo apt update -y && sudo apt upgrade -y<br>
     > sudo apt install ntpdate -y<br>
     > echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc<br>
     > echo -e "export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc<br>
     > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc<br>
     > sudo apt install -y x11-apps<br>
- * Start a new terminal and try opening a Linux gui application<br>
+
+* Type `:wq` to save the file and exit vim
+* Run the script
+* Remove the script
+    > rm temp_script.sh
+
+* Start a new terminal and try opening a Linux gui application<br>
     > xeyes
 
     > xclac
