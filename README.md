@@ -99,7 +99,7 @@ through the Microsoft Store.
     > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc<br>
     > apt install -y x11-apps<br>
 
-* Type `:wq` to save the file and exit vim
+* Type `:wq` to save the file and then press `Enter` to exit vim
 * Run the script
     > sudo bash temp_script.sh
 * Remove the script
