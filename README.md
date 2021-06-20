@@ -92,16 +92,16 @@ through the Microsoft Store.
     > vim temp_script.sh
 
 * copy paste this text block into the file:
-    > sudo apt update -y && sudo apt upgrade -y<br>
-    > sudo apt install ntpdate -y<br>
+    > apt update -y && sudo apt upgrade -y<br>
+    > apt install ntpdate -y<br>
     > echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc<br>
     > echo -e "export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc<br>
     > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc<br>
-    > sudo apt install -y x11-apps<br>
+    > apt install -y x11-apps<br>
 
 * Type `:wq` to save the file and exit vim
 * Run the script
-    > bash temp_script.sh
+    > sudo bash temp_script.sh
 * Remove the script
     > rm temp_script.sh
 
