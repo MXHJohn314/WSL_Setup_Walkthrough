@@ -75,12 +75,6 @@ through the Microsoft Store.
           something in Notepad, copy it, then right-click once to paste it. This is easier to do
           with passwords, especially when you can’t see them.
     + Close Ubuntu
-    
-* Go back to Powershell and use these commands to keep Ubuntu's clock in sync with your Windows machine
-  > `schtasks /create /tn WSLClockSync /tr "wsl.exe sudo hwclock -s" /sc onevent /ec system /mo "*[System[Provider[@Name='Microsoft-Windows-Kernel-General'] and (EventID=1)]]"`
-
-  > `Set-ScheduledTask WSLClockSync -Settings (New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries)`
-
 
 ## Set up Ubuntu as the default profile for Windows Terminal
 
@@ -95,9 +89,15 @@ through the Microsoft Store.
 
 ## Configure Ubuntu GUI apps to run in Windows
 
-* Type these commands in Windows Terminal:
+* Type these commands in Windows Terminal, entering your password when prompted:
   
   > sudo apt update -y && sudo apt upgrade -y
+
+  > `sudo apt install ntpdate -y`
+
+  > `> user-data.sh`
+
+  > `echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc`
   
   > export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0
   
