@@ -3,7 +3,7 @@
 ### Requirements: Windows computer, 8+ GB ram
 ### Setup time: 10 minutes
 
-This supplemental text is just an outline of the complete video walkthrough. MSU students, [Click here for the comprehensive video](https://msudenver.sharepoint.com/:v:/s/21UCS2050LA/EfnPHAsR2bdCo0RNyVikh_cBk2i-GdgzUpKqxCYikxqwDA?e=wfYBrO)
+This supplemental text is just an outline of the complete video walkthrough. If you are part of the MSU network (students or staff), [Click here for the comprehensive video](https://msudenver.sharepoint.com/:v:/s/21UCS2050LA/EfnPHAsR2bdCo0RNyVikh_cBk2i-GdgzUpKqxCYikxqwDA?e=wfYBrO)
 
 ### Benefits of using Windows Subsystem for Linux 2:
 
