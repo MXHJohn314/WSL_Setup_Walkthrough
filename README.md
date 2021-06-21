@@ -100,7 +100,7 @@ through the Microsoft Store or custom distros on GitHub.com.
     
     > echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc
     
-    > echo -e "export DISPLAY=$(grep -Po '(\d+\.\d+\.\d+\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
+    > echo -e "export DISPLAY=$(grep -Po '(\d+\\\.\d+\\\.\d+\\\.\d+\\\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
     
     > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc
     
