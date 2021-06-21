@@ -13,7 +13,7 @@ This supplemental text is just an outline of the complete video walkthrough. If 
 - No more Sending files to yourself from a virtual machine
 
 We are setting up Ubuntu in this walkthrough, but you can use any distro you are familiar with
-through the Microsoft Store.
+through the Microsoft Store or custom distros on GitHub.com.
 
 ## Setting up Windows Terminal
 
