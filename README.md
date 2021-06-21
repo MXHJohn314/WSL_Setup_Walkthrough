@@ -45,7 +45,6 @@ through the Microsoft Store.
 * Open Powershell in Administrator Mode again
 * Type command
   > `wsl --set-default-version 2`
-* Keep Powershell open, we will come
 
 ## Install VcXsrv
 
