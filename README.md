@@ -9,8 +9,8 @@ This supplemental text is an outline of the complete video walkthrough. If you a
 
 - Follow Linux commands in class, just like a Linux/Mac user
 - No need for GitBash for Windows
-- No more Putty tools for ssh access to remote computers
-- No more Sending files to yourself from a virtual machine
+- No need for Putty/other ssh tools for remote access
+- No need to send files to yourself from a virtual machine
 
 We are setting up Ubuntu in this walkthrough, but you can use any distro you are familiar with
 through the Microsoft Store or custom distros on GitHub.com.
