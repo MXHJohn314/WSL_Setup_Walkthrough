@@ -95,10 +95,6 @@ through the Microsoft Store or custom distros on GitHub.com.
 
 * One line at a time, copy paste this text block into the file:
     > sudo apt update -y && sudo apt upgrade -y
-
-    > sudo apt install ntpdate -y
-    
-    > echo -e "sudo ntpdate time.windows.com\n" >> ~/.bashrc
     
     > echo -e "export DISPLAY=$(grep -Po '(\d+\\\.\d+\\\.\d+\\\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
     
