@@ -35,6 +35,7 @@ through the Microsoft Store or custom distros on GitHub.com.
 * Go back to Microsoft Store, search for “Ubuntu”, and click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
 * Click yes to the pop up.
+* Use these commands in Powershell to enable the use of WSL
 
   > `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
   
