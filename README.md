@@ -30,6 +30,8 @@ through the Microsoft Store or custom distros on GitHub.com.
 
 #### Now you can use the shortcut to open Terminal, just like Linux!
 
+## Install and enable WSL, and Upgrade to WSL 2
+
 * Go back to Microsoft Store, search for “Ubuntu”, and click the `install` button
 * While Ubuntu is installing, press the Windows key and search for Powershell, then Run as Administrator 
 * Click yes to the pop up.
