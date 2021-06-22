@@ -43,14 +43,6 @@ through the Microsoft Store or custom distros on GitHub.com.
 
 * Restart the computer
 
-## Set up username and password on Ubuntu App
-
-* Press the Windows key and search for “Ubuntu” from the Start menu → run it.
-    + Wait for Ubuntu to prompt you for a username and password that you will not forget
-        - Note: in Linux, the password characters do no appear. Sometimes it’s easier to write
-          something in Notepad, copy it, then right-click once to paste it. This is easier to do
-          with passwords, especially when you can’t see them.
-    + Close Ubuntu
 
 * Download the WSl 2 upgrade
   at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
@@ -83,6 +75,15 @@ through the Microsoft Store or custom distros on GitHub.com.
     + click and drag the newly-created `config.xlaunch` shortcut from the desktop into the startup folder.
 
 ### Now your couputer will automatically configure VcxSrv to allow WSL 2 to use you computer's display!
+
+## Set up username and password on Ubuntu App
+
+* Press the Windows key and search for “Ubuntu” from the Start menu → run it.
+    + Wait for Ubuntu to prompt you for a username and password that you will not forget
+        - Note: in Linux, the password characters do no appear. Sometimes it’s easier to write
+          something in Notepad, copy it, then right-click once to paste it. This is easier to do
+          with passwords, especially when you can’t see them.
+    + Close Ubuntu
 
 ## Set up Ubuntu as the default profile for Windows Terminal
 
