@@ -105,8 +105,7 @@ through the Microsoft Store or custom distros on GitHub.com.
 ## Configure Ubuntu GUI apps to run in Windows
 
 * One line at a time, copy paste this text block into the file:
-    ```
-    sudo apt update -y && sudo apt upgrade -y```
+    ```sudo apt update -y && sudo apt upgrade -y```
     ```
     echo -e "export DISPLAY=$(grep -Po '(\d+\\\.\d+\\\.\d+\\\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
     ```
