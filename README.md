@@ -37,9 +37,13 @@ through the Microsoft Store or custom distros on GitHub.com.
 * Click yes to the pop up.
 * Use these commands in Powershell to enable the use of WSL
 
-  > `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
+  ```
+  dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+  ```
   
-  > `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+  ```
+  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+  ```
 
 * Restart the computer
 
@@ -48,12 +52,14 @@ through the Microsoft Store or custom distros on GitHub.com.
   at https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 * Run the installation
 * Open Powershell in Administrator Mode again
-* Type command
-  > `wsl --set-default-version 2`
+* Type the following command
+  ```
+  wsl --set-default-version 2
+  ```
 
-## Install VcXsrv
+## *OPTIONAL* Install VcXsrv
 
-#### VcXsrv will allow you to use your computer's display for WSL 2 applications
+#### VcXsrv will allow you to use your computer's display forLinux  GUI applications
 
 * Download VcXsrv at https://sourceforge.net/projects/vcxsrv/ and run the executable. It may take a minute to ask for permission to run.
     + click next
@@ -99,18 +105,19 @@ through the Microsoft Store or custom distros on GitHub.com.
 ## Configure Ubuntu GUI apps to run in Windows
 
 * One line at a time, copy paste this text block into the file:
-    > sudo apt update -y && sudo apt upgrade -y
-    
-    > echo -e "export DISPLAY=$(grep -Po '(\d+\\\.\d+\\\.\d+\\\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
-    
-    > echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc
-    
-    > sudo apt install -y x11-apps
-    
+    ```
+    sudo apt update -y && sudo apt upgrade -y
+    echo -e "export DISPLAY=$(grep -Po '(\d+\\\.\d+\\\.\d+\\\.\d+\.*)' /etc/resolv.conf):0.0\n" >> ~/.bashrc
+    echo -e "export LIBGL_ALWAYS_INDIRECT=1\n" >> ~/.bashrc
+    sudo apt install -y x11-apps
+    ```
 
-* Start a new terminal and try opening a Linux gui application<br>
-    > xeyes
-
-    > xcalc
+* Start a new terminal and try opening a couple Linux gui applications<br>
+    ```
+    xeyes
+    ```
+    ```
+    xcalc
+    ```
 
 #### You should now see a new window in the taskbar with a pair of eyes, and a calculator. You are running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
