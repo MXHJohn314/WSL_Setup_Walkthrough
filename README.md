@@ -126,3 +126,4 @@ through the Microsoft Store or custom distros on GitHub.com.
     ```
 
 #### You should now see a new window in the taskbar with a pair of eyes, and a calculator. You are running gui applications from Ubuntu. Congratulations, your life just got a lot easier. Explore Bash and get familiar with it because it's about to be your best friend. Enjoy!
+
